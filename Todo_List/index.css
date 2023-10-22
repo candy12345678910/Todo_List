@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.contain
+{
+    width: auto;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right,#022f63, #170020);
+    padding: 10px;
+}
+
+/* To do container*/
+.todo{
+    height: auto;
+    width:  35%;
+    /* max-width: auto; */
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 40px 30px 40px;
+    margin: 100px auto 20px auto;
+}
+.todo p{
+    text-align: left;
+    color: rgb(21, 22, 29);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.todo img{
+    height: 25px;
+    width: auto;
+}
+
+/* Add list */
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px 10px; */
+    border-radius: 30px;
+    background: rgba(207, 207, 207, 0.589);
+}
+.input{
+    flex: 1;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 15px;
+    background: rgba(207, 207, 207, 0.041);
+    font-size: 16px;
+}
+.add{
+    padding: 15px 40px;
+    border-radius: 30px;
+    background-color: orangered;
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+}
+.add:hover{
+    transition-duration: .1s;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Task box */
+
+.task-box li{
+    list-style: none;
+    padding: 15px 20px;
+    margin: 15px 0px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #0d1014;
+    cursor: pointer;
+    background-color: rgb(255, 195, 84);
+    border-radius: 15px;
+}
+.task-box li.done{
+    text-decoration: line-through;
+    list-style: none;
+    padding: 15px 20px;
+    margin: 15px 0px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #0d1014;
+    cursor: pointer;
+    background-color: rgb(71, 255, 95);
+    border-radius: 15px;
+}
+
+.delete{
+    border-radius: 5px;
+    background-color: rgba(255, 195, 84, 0);;
+    color:rgb(49, 49, 49);
+    position: absolute;
+    margin-bottom: 15px;
+    font-size: 22px;
+    right:35%;
+}
+.delete:hover{
+    color: rgb(255, 255, 255);
+}
